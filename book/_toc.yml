@@ -6,7 +6,7 @@ format: jb-book
 
 root: content/Overview/uebersicht
 parts:
-- caption: Ingenieurinformatik
+- caption: Datenenanalyse mit Python
   chapters:
   - file: content/Overview/informatik
   - file: content/Overview/cce
