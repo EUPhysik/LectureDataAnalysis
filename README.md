@@ -1,4 +1,4 @@
-# Lecture Computer Science
+# Lecture Data Analysis
 Lecture and exercises. 
 
 # Repository Webpage
