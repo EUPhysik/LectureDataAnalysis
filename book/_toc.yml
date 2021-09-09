@@ -22,28 +22,28 @@ parts:
 ########################################
 # Kapitel COMPUTER
 
-  - file: content/Script/01_computer/00_einleitung
-    sections:
-    - file: content/Script/01_computer/01_digitalisierung
-      sections:
-      - file: content/Script/01_computer/011_analoge_informationen
-      - file: content/Script/01_computer/012_digitale_informationen
-      - file: content/Script/01_computer/013_zahlendarstellung
-    - file: content/Script/01_computer/02_algorithmen
-      sections:
-      - file: content/Script/01_computer/021_sortieralgorithmen
-      - file: content/Script/01_computer/022_eigenschaften
-      - file: content/Script/01_computer/023_numerische_algorithmen
-    - file: content/Script/01_computer/03_hardware
-      sections:
-      - file: content/Script/01_computer/031_geschichte
-      - file: content/Script/01_computer/032_komponenten
-      - file: content/Script/01_computer/033_funktionsweise_computer
-    - file: content/Script/01_computer/04_software
-      sections:
-      - file: content/Script/01_computer/041_betriebssysteme
-      - file: content/Script/01_computer/042_softwareentwicklung
-      - file: content/Script/01_computer/043_dateisystem
+#  - file: content/Script/01_computer/00_einleitung
+#    sections:
+#    - file: content/Script/01_computer/01_digitalisierung
+#      sections:
+#      - file: content/Script/01_computer/011_analoge_informationen
+#      - file: content/Script/01_computer/012_digitale_informationen
+#      - file: content/Script/01_computer/013_zahlendarstellung
+#    - file: content/Script/01_computer/02_algorithmen
+#      sections:
+#      - file: content/Script/01_computer/021_sortieralgorithmen
+#      - file: content/Script/01_computer/022_eigenschaften
+#      - file: content/Script/01_computer/023_numerische_algorithmen
+#    - file: content/Script/01_computer/03_hardware
+#      sections:
+#      - file: content/Script/01_computer/031_geschichte
+#      - file: content/Script/01_computer/032_komponenten
+#      - file: content/Script/01_computer/033_funktionsweise_computer
+#    - file: content/Script/01_computer/04_software
+#      sections:
+#      - file: content/Script/01_computer/041_betriebssysteme
+#      - file: content/Script/01_computer/042_softwareentwicklung
+#      - file: content/Script/01_computer/043_dateisystem
 
 ########################################
 # Kapitel PYTHON
@@ -104,23 +104,23 @@ parts:
 ########################################
 # Kapitel NUMERIK
 
-  - file: content/Script/04_numerik/04_einleitung
-    sections:
-    - file: content/Script/04_numerik/041_integrale
-      sections:
-      - file: content/Script/04_numerik/0411_oberuntersumme
-      - file: content/Script/04_numerik/0412_interpolation
-      - file: content/Script/04_numerik/0413_montecarlo
-    - file: content/Script/04_numerik/042_ableitungen
-      sections:
-      - file: content/Script/04_numerik/0421_taylor
-      - file: content/Script/04_numerik/0422_differenzenquotienten
-      - file: content/Script/04_numerik/0423_konvergenz
-    - file: content/Script/04_numerik/043_dgl
-      sections:
-      - file: content/Script/04_numerik/0431_fdm
-      - file: content/Script/04_numerik/0432_ode
-      - file: content/Script/04_numerik/0433_pde
+#  - file: content/Script/04_numerik/04_einleitung
+#    sections:
+#    - file: content/Script/04_numerik/041_integrale
+#      sections:
+#      - file: content/Script/04_numerik/0411_oberuntersumme
+#      - file: content/Script/04_numerik/0412_interpolation
+#      - file: content/Script/04_numerik/0413_montecarlo
+#    - file: content/Script/04_numerik/042_ableitungen
+#      sections:
+#      - file: content/Script/04_numerik/0421_taylor
+#      - file: content/Script/04_numerik/0422_differenzenquotienten
+#      - file: content/Script/04_numerik/0423_konvergenz
+#    - file: content/Script/04_numerik/043_dgl
+#      sections:
+#      - file: content/Script/04_numerik/0431_fdm
+#      - file: content/Script/04_numerik/0432_ode
+#      - file: content/Script/04_numerik/0433_pde
 
 
 ########################################
@@ -134,24 +134,24 @@ parts:
 ########################################
 # AUFGABENSAMMLUNG COMPUTER
 
-  - file: content/Exercises/01_computer/uebersicht
-    sections:
-    - file: content/Exercises/01_computer/01_zahlendarstellung/zahlendarstellung
-    - file: content/Exercises/01_computer/02_zeichendarstellung/zeichendarstellung
-    - file: content/Exercises/01_computer/03_intervallschachtelung/intervallschachtelung
-    - file: content/Exercises/01_computer/04_eratosthenes/eratosthenes
-    - file: content/Exercises/01_computer/05_ggt/ggt
-    - file: content/Exercises/01_computer/06_majoritaet/majoritaet
-    - file: content/Exercises/01_computer/07_architekturen/architekturen
-    - file: content/Exercises/01_computer/08_betriebssysteme/betriebssysteme
-    - file: content/Exercises/01_computer/zusatzaufgaben/uebersicht
-      sections:
-      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_algorithmen/zusatz_algorithmen
-      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_programmablaufplaene/zusatz_programmablaufplaene
-      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_perfekte_zahlen/zusatz_perfekte_zahlen
-      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_intervallschachtelung/zusatz_intervallschachtelung
-      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_architekturen/zusatz_architekturen
-      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_betriebssysteme/zusatz_betriebssysteme
+#  - file: content/Exercises/01_computer/uebersicht
+#    sections:
+#    - file: content/Exercises/01_computer/01_zahlendarstellung/zahlendarstellung
+#    - file: content/Exercises/01_computer/02_zeichendarstellung/zeichendarstellung
+#    - file: content/Exercises/01_computer/03_intervallschachtelung/intervallschachtelung
+#    - file: content/Exercises/01_computer/04_eratosthenes/eratosthenes
+#    - file: content/Exercises/01_computer/05_ggt/ggt
+#    - file: content/Exercises/01_computer/06_majoritaet/majoritaet
+#    - file: content/Exercises/01_computer/07_architekturen/architekturen
+#    - file: content/Exercises/01_computer/08_betriebssysteme/betriebssysteme
+#    - file: content/Exercises/01_computer/zusatzaufgaben/uebersicht
+#      sections:
+#      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_algorithmen/zusatz_algorithmen
+#      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_programmablaufplaene/zusatz_programmablaufplaene
+#      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_perfekte_zahlen/zusatz_perfekte_zahlen
+#      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_intervallschachtelung/zusatz_intervallschachtelung
+#      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_architekturen/zusatz_architekturen
+#      - file: content/Exercises/01_computer/zusatzaufgaben/zusatz_betriebssysteme/zusatz_betriebssysteme
 
 ########################################
 # AUFGABENSAMMLUNG PYTHON
@@ -195,14 +195,14 @@ parts:
 ########################################
 # AUFGABENSAMMLUNG NUMERIK
 
-  - file: content/Exercises/04_numerik/uebersicht
-    sections:
-    - file: content/Exercises/04_numerik/01_trapez/trapez
-    - file: content/Exercises/04_numerik/02_pi_mc/pi_mc
-    - file: content/Exercises/04_numerik/03_abl_analytisch/abl_analytisch
-    - file: content/Exercises/04_numerik/04_abl_num/abl_num
-    - file: content/Exercises/04_numerik/05_ableitungsfunktion/ableitungsfunktion
-    - file: content/Exercises/04_numerik/06_temperaturgleichung/temperaturgleichung
+#  - file: content/Exercises/04_numerik/uebersicht
+#    sections:
+#    - file: content/Exercises/04_numerik/01_trapez/trapez
+#    - file: content/Exercises/04_numerik/02_pi_mc/pi_mc
+#    - file: content/Exercises/04_numerik/03_abl_analytisch/abl_analytisch
+#    - file: content/Exercises/04_numerik/04_abl_num/abl_num
+#    - file: content/Exercises/04_numerik/05_ableitungsfunktion/ableitungsfunktion
+#    - file: content/Exercises/04_numerik/06_temperaturgleichung/temperaturgleichung
 
 
 #######################################
