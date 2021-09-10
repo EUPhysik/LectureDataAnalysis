@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.2.7. Sammeltypen &#8212; Vorlesung Ingenieurinformatik</title>
+    <title>1.2.7. Sammeltypen &#8212; Vorlesung Datenanalyse mit Python</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,8 +49,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://firedynamics.github.io/LectureComputerScience/content/Script/02_python/0227_sammeltypen.html" />
-    <link rel="shortcut icon" href="../../../_static/cce_logo_standalone_icon.png"/>
+    <link rel="canonical" href="https://EUPhysics.github.io/LectureDataAnalysis/content/Script/02_python/0227_sammeltypen.html" />
+    <link rel="shortcut icon" href="../../../_static/FHDO-Logo-large.svg"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="1.3. Flusskontrolle" href="023_flusskontrolle.html" />
@@ -73,10 +73,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
-      <img src="../../../_static/cce_logo.png" class="logo" alt="logo">
+      <img src="../../../_static/FHDO-Logo-large.svg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Vorlesung Ingenieurinformatik</h1>
+      <h1 class="site-logo" id="site-title">Vorlesung Datenanalyse mit Python</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
@@ -91,13 +91,8 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../Overview/informatik.html">
-   Informatik
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../Overview/cce.html">
-   Computational Civil Engineering (CCE)
+  <a class="reference internal" href="../../Overview/eup.html">
+   Idee des Kurses ‘Datenanalyse mit Python’
   </a>
  </li>
 </ul>
@@ -592,14 +587,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/FireDynamics/LectureComputerScience"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://EUPhysics.github.io/LectureDataAnalysis/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/FireDynamics/LectureComputerScience/issues/new?title=Issue%20on%20page%20%2Fcontent/Script/02_python/0227_sammeltypen.html&body=Your%20issue%20content%20here."><button
+            href="https://EUPhysics.github.io/LectureDataAnalysis//issues/new?title=Issue%20on%20page%20%2Fcontent/Script/02_python/0227_sammeltypen.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/FireDynamics/LectureComputerScience/edit/main/book/content/Script/02_python/0227_sammeltypen.ipynb"><button
+        <a class="edit-button" href="https://github.com/EUPhysics.github.io/LectureDataAnalysis/edit/main/book/content/Script/02_python/0227_sammeltypen.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -660,15 +655,15 @@
 <p>Definiert werden Tupel mit runden Klammern <code class="docutils literal notranslate"><span class="pre">()</span></code> und die Elemente werden mit einem Komma <code class="docutils literal notranslate"><span class="pre">,</span></code> getrennt.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tupel</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="s1">&#39;Feuer&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tupel</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="s1">&#39;Wasser&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="n">tupel</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="n">tupel</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(2, 7.8, &#39;Feuer&#39;)
-Feuer
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(2, 7.8, &#39;Wasser&#39;)
+Wasser
 </pre></div>
 </div>
 </div>
@@ -697,13 +692,13 @@ Menge:  {2, 3, 4, 5, 6, 8}
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;computer&#39;</span><span class="p">,</span> <span class="s1">&#39;feuer&#39;</span><span class="p">,</span> <span class="s1">&#39;feuer&#39;</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;computer&#39;</span><span class="p">,</span> <span class="s1">&#39;wasser&#39;</span><span class="p">,</span> <span class="s1">&#39;wasser&#39;</span><span class="p">}</span>
 <span class="nb">print</span><span class="p">(</span> <span class="n">set2</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{2, 3, 6, &#39;computer&#39;, &#39;feuer&#39;}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{2, 3, 6, &#39;computer&#39;, &#39;wasser&#39;}
 </pre></div>
 </div>
 </div>
@@ -715,7 +710,7 @@ Menge:  {2, 3, 4, 5, 6, 8}
 <p>Definiert werden Dictionaries mit geschweiften Klammern <code class="docutils literal notranslate"><span class="pre">{}</span></code> und die Schlüssel und deren zugehörigen Wert werden mit einem Doppelpunkt <code class="docutils literal notranslate"><span class="pre">:</span></code> getrennt. Der Zugriff auf die Werte erfolgt mit <code class="docutils literal notranslate"><span class="pre">[]</span></code>, welche den Schlüssel beinhalten.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;vorname&#39;</span><span class="p">:</span> <span class="s1">&#39;Lukas&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="mf">3.8</span><span class="p">,</span> <span class="s1">&#39;büro&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;vorname&#39;</span><span class="p">:</span> <span class="s1">&#39;Simone&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="mf">3.8</span><span class="p">,</span> <span class="s1">&#39;büro&#39;</span><span class="p">:</span> <span class="s1">&#39;A307&#39;</span><span class="p">}</span>
 <span class="nb">print</span><span class="p">(</span> <span class="n">dictionary</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="n">dictionary</span> <span class="p">[</span><span class="s1">&#39;vorname&#39;</span><span class="p">]</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="n">dictionary</span> <span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="p">)</span>
@@ -723,8 +718,8 @@ Menge:  {2, 3, 4, 5, 6, 8}
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;vorname&#39;: &#39;Lukas&#39;, 3: 3.8, &#39;büro&#39;: 6}
-Lukas
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;vorname&#39;: &#39;Simone&#39;, 3: 3.8, &#39;büro&#39;: &#39;A307&#39;}
+Simone
 3.8
 </pre></div>
 </div>
@@ -789,7 +784,7 @@ Lukas
     <div class="container">
       <p>
         
-          By Team Fire | CCE@BUW + IAS-7@FZJ<br/>
+          By EUPhysik<br/>
         
       </p>
     </div>

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.4.3. Dateien &#8212; Vorlesung Ingenieurinformatik</title>
+    <title>1.4.3. Dateien &#8212; Vorlesung Datenanalyse mit Python</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,8 +49,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://firedynamics.github.io/LectureComputerScience/content/Script/02_python/0243_dateien.html" />
-    <link rel="shortcut icon" href="../../../_static/cce_logo_standalone_icon.png"/>
+    <link rel="canonical" href="https://EUPhysics.github.io/LectureDataAnalysis/content/Script/02_python/0243_dateien.html" />
+    <link rel="shortcut icon" href="../../../_static/FHDO-Logo-large.svg"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="2. Datenanalyse" href="../03_datenanalyse/03_einleitung.html" />
@@ -73,10 +73,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
-      <img src="../../../_static/cce_logo.png" class="logo" alt="logo">
+      <img src="../../../_static/FHDO-Logo-large.svg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Vorlesung Ingenieurinformatik</h1>
+      <h1 class="site-logo" id="site-title">Vorlesung Datenanalyse mit Python</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
@@ -91,13 +91,8 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../Overview/informatik.html">
-   Informatik
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../Overview/cce.html">
-   Computational Civil Engineering (CCE)
+  <a class="reference internal" href="../../Overview/eup.html">
+   Idee des Kurses ‘Datenanalyse mit Python’
   </a>
  </li>
 </ul>
@@ -592,14 +587,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/FireDynamics/LectureComputerScience"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://EUPhysics.github.io/LectureDataAnalysis/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/FireDynamics/LectureComputerScience/issues/new?title=Issue%20on%20page%20%2Fcontent/Script/02_python/0243_dateien.html&body=Your%20issue%20content%20here."><button
+            href="https://EUPhysics.github.io/LectureDataAnalysis//issues/new?title=Issue%20on%20page%20%2Fcontent/Script/02_python/0243_dateien.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/FireDynamics/LectureComputerScience/edit/main/book/content/Script/02_python/0243_dateien.ipynb"><button
+        <a class="edit-button" href="https://github.com/EUPhysics.github.io/LectureDataAnalysis/edit/main/book/content/Script/02_python/0243_dateien.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -670,7 +665,7 @@
 <p>Um einen Zugriff auf eine Datei zu bekommen, muss diese fürs Lesen oder Schreiben geöffnet werden. Dazu kann die Funktion <code class="docutils literal notranslate"><span class="pre">open</span></code> verwendet werden. Diese nimmt zwei Argumente, den Pfad der Datei und den Zugriffsmodus, an und liefert ein Dateiobjekt zurück. Über dieses Objekt erfolgt dann der Zugriff auf die Inhalte der Datei.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/wuppertal.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/dortmund.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -698,7 +693,7 @@
 <p>Beinhalten die Textdateien Zeichen, welche nicht im ASCII-Format gespeichtert sind, kann es je nach Pyhton-Interpreter notwendig sein, dies beim Aufruf der <code class="docutils literal notranslate"><span class="pre">open</span></code>-Funktion anzugeben. An dieser Stelle kann die UTF-8 Kodierung angegeben werden, denn damit sind die meisten Anwendungsfälle abgedeckt. Beinhaltet die Datei nur Zahlen ist dies nicht notwendig.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/wuppertal.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/dortmund.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -718,7 +713,7 @@
 <p>Um den gesamten Inhalt einer Textdatei einzulesen kann die <code class="docutils literal notranslate"><span class="pre">read</span></code>-Methode verwendet werden.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/wuppertal.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/dortmund.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 
 <span class="n">inhalt</span> <span class="o">=</span> <span class="n">datei</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 
@@ -735,18 +730,9 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Inhalt der Datei:
 =================
-Aus Wikipedia: Wuppertal ist mit 354.382 Einwohnern (31. 
-Dezember 2018) die größte Stadt und das Industrie-, 
-Wirtschafts-, Bildungs- und Kulturzentrum des Bergischen 
-Landes im Westen Deutschlands. Die „Großstadt im Grünen“ 
-liegt südlich des Ruhrgebiets im Regierungsbezirk 
-Düsseldorf und ist als siebzehntgrößte Stadt Deutschlands 
-eines der Oberzentren des Landes Nordrhein-Westfalen. Die 
-Stadt ist Teil der Metropolregionen Rhein-Ruhr und 
-Rheinland, des Landschaftsverbands Rheinland sowie des 
-Bergischen Städtedreiecks.
+Aus Wikipedia:  Dortmund ist eine kreisfreie Großstadt in Nordrhein-Westfalen und mit 587.696 Einwohnern die neuntgrößte Stadt Deutschlands, sowie nach Köln und Düsseldorf drittgrößte Stadt Nordrhein-Westfalens. Dortmund ist Teil der Metropolregion Rhein-Ruhr mit rund elf Millionen Einwohnern, nach Fläche und Einwohnerzahl die größte Stadt im Ruhrgebiet und gilt als das administrative, kommerzielle sowie kulturelle Zentrum des östlichen Ruhrgebiets. Die Stadt befindet sich in Westfalen und ist Teil des Regierungsbezirks Arnsberg.
 
-Länge der Zeichenkette:  530
+Länge der Zeichenkette:  535
 </pre></div>
 </div>
 </div>
@@ -755,7 +741,7 @@ Länge der Zeichenkette:  530
 <p>Sollen beispielsweise nur die ersten drei Zeilen eingelesen werden, so kann dies mit einer einfachen <code class="docutils literal notranslate"><span class="pre">for</span></code>-Schleife erfolgen.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/wuppertal.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/dortmund.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
     <span class="n">zeile</span> <span class="o">=</span> <span class="n">datei</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
@@ -768,13 +754,10 @@ Länge der Zeichenkette:  530
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Inhalt Zeile 0:
-Aus Wikipedia: Wuppertal ist mit 354.382 Einwohnern (31. 
-
+Aus Wikipedia:  Dortmund ist eine kreisfreie Großstadt in Nordrhein-Westfalen und mit 587.696 Einwohnern die neuntgrößte Stadt Deutschlands, sowie nach Köln und Düsseldorf drittgrößte Stadt Nordrhein-Westfalens. Dortmund ist Teil der Metropolregion Rhein-Ruhr mit rund elf Millionen Einwohnern, nach Fläche und Einwohnerzahl die größte Stadt im Ruhrgebiet und gilt als das administrative, kommerzielle sowie kulturelle Zentrum des östlichen Ruhrgebiets. Die Stadt befindet sich in Westfalen und ist Teil des Regierungsbezirks Arnsberg.
 Inhalt Zeile 1:
-Dezember 2018) die größte Stadt und das Industrie-, 
 
 Inhalt Zeile 2:
-Wirtschafts-, Bildungs- und Kulturzentrum des Bergischen 
 </pre></div>
 </div>
 </div>
@@ -782,7 +765,7 @@ Wirtschafts-, Bildungs- und Kulturzentrum des Bergischen
 <p>Eine weitere Möglichkeit des Auslesens ist die Nutzung des Dateiobjekts als Sequenz, bei welcher jede Zeile der Datei einem Element entspricht.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/wuppertal.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datei</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dateien/dortmund.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">zeile</span> <span class="ow">in</span> <span class="n">datei</span><span class="p">:</span>
@@ -795,35 +778,8 @@ Wirtschafts-, Bildungs- und Kulturzentrum des Bergischen
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Inhalt Zeile 0, mit 58 Zeichen:
-Aus Wikipedia: Wuppertal ist mit 354.382 Einwohnern (31. 
-
-Inhalt Zeile 1, mit 53 Zeichen:
-Dezember 2018) die größte Stadt und das Industrie-, 
-
-Inhalt Zeile 2, mit 58 Zeichen:
-Wirtschafts-, Bildungs- und Kulturzentrum des Bergischen 
-
-Inhalt Zeile 3, mit 58 Zeichen:
-Landes im Westen Deutschlands. Die „Großstadt im Grünen“ 
-
-Inhalt Zeile 4, mit 51 Zeichen:
-liegt südlich des Ruhrgebiets im Regierungsbezirk 
-
-Inhalt Zeile 5, mit 59 Zeichen:
-Düsseldorf und ist als siebzehntgrößte Stadt Deutschlands 
-
-Inhalt Zeile 6, mit 59 Zeichen:
-eines der Oberzentren des Landes Nordrhein-Westfalen. Die 
-
-Inhalt Zeile 7, mit 52 Zeichen:
-Stadt ist Teil der Metropolregionen Rhein-Ruhr und 
-
-Inhalt Zeile 8, mit 56 Zeichen:
-Rheinland, des Landschaftsverbands Rheinland sowie des 
-
-Inhalt Zeile 9, mit 26 Zeichen:
-Bergischen Städtedreiecks.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Inhalt Zeile 0, mit 535 Zeichen:
+Aus Wikipedia:  Dortmund ist eine kreisfreie Großstadt in Nordrhein-Westfalen und mit 587.696 Einwohnern die neuntgrößte Stadt Deutschlands, sowie nach Köln und Düsseldorf drittgrößte Stadt Nordrhein-Westfalens. Dortmund ist Teil der Metropolregion Rhein-Ruhr mit rund elf Millionen Einwohnern, nach Fläche und Einwohnerzahl die größte Stadt im Ruhrgebiet und gilt als das administrative, kommerzielle sowie kulturelle Zentrum des östlichen Ruhrgebiets. Die Stadt befindet sich in Westfalen und ist Teil des Regierungsbezirks Arnsberg.
 </pre></div>
 </div>
 </div>
@@ -866,10 +822,11 @@ Bergischen Städtedreiecks.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Anzahl der gefundenen Dateien: 7
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Anzahl der gefundenen Dateien: 8
 Dateienliste:
    dateien/bochum.txt
    dateien/tabelle.csv
+   dateien/dortmund.txt
    dateien/neue_datei.txt
    dateien/wuppertal.txt
    dateien/juelich.txt
@@ -892,9 +849,10 @@ Dateienliste:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Anzahl der gefundenen Dateien: 4
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Anzahl der gefundenen Dateien: 5
 Dateienliste:
    dateien/bochum.txt
+   dateien/dortmund.txt
    dateien/neue_datei.txt
    dateien/wuppertal.txt
    dateien/juelich.txt
@@ -921,6 +879,8 @@ Dateienliste:
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Erste Zeile der Datei &#39;dateien/bochum.txt&#39;:
 Aus Wikipedia: Die Stadt Bochum [ˈboːxʊm] (westfälisch: 
 
+Erste Zeile der Datei &#39;dateien/dortmund.txt&#39;:
+Aus Wikipedia:  Dortmund ist eine kreisfreie Großstadt in Nordrhein-Westfalen und mit 587.696 Einwohnern die neuntgrößte Stadt Deutschlands, sowie nach Köln und Düsseldorf drittgrößte Stadt Nordrhein-Westfalens. Dortmund ist Teil der Metropolregion Rhein-Ruhr mit rund elf Millionen Einwohnern, nach Fläche und Einwohnerzahl die größte Stadt im Ruhrgebiet und gilt als das administrative, kommerzielle sowie kulturelle Zentrum des östlichen Ruhrgebiets. Die Stadt befindet sich in Westfalen und ist Teil des Regierungsbezirks Arnsberg.
 Erste Zeile der Datei &#39;dateien/neue_datei.txt&#39;:
 Hallo Dateiwelt!
 Erste Zeile der Datei &#39;dateien/wuppertal.txt&#39;:
@@ -950,6 +910,7 @@ Aus Wikipedia: Jülich liegt an der Rur. Das zugehörige
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dateienliste nach dem Erstellen der neuen Datei:
    dateien/bochum.txt
    dateien/tabelle.csv
+   dateien/dortmund.txt
    dateien/wuppertal.txt
    dateien/juelich.txt
    dateien/zahlen.csv
@@ -986,6 +947,7 @@ Aus Wikipedia: Jülich liegt an der Rur. Das zugehörige
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dateienliste nach dem Erstellen der neuen Datei:
    dateien/bochum.txt
    dateien/tabelle.csv
+   dateien/dortmund.txt
    dateien/neue_datei.txt
    dateien/wuppertal.txt
    dateien/juelich.txt
@@ -1242,7 +1204,7 @@ Spalte y: [1.0, 4.0, 9.0, 16.0, 25.0, 36.0, 49.0, 64.0]
     <div class="container">
       <p>
         
-          By Team Fire | CCE@BUW + IAS-7@FZJ<br/>
+          By EUPhysik<br/>
         
       </p>
     </div>

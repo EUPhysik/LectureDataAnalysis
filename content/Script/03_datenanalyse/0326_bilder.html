@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2.2.6. Bilddaten &#8212; Vorlesung Ingenieurinformatik</title>
+    <title>2.2.6. Bilddaten &#8212; Vorlesung Datenanalyse mit Python</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://firedynamics.github.io/LectureComputerScience/content/Script/03_datenanalyse/0326_bilder.html" />
-    <link rel="shortcut icon" href="../../../_static/cce_logo_standalone_icon.png"/>
+    <link rel="canonical" href="https://EUPhysics.github.io/LectureDataAnalysis/content/Script/03_datenanalyse/0326_bilder.html" />
+    <link rel="shortcut icon" href="../../../_static/FHDO-Logo-large.svg"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="2.3. Modellierung" href="033_modellierung.html" />
@@ -75,10 +75,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
-      <img src="../../../_static/cce_logo.png" class="logo" alt="logo">
+      <img src="../../../_static/FHDO-Logo-large.svg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Vorlesung Ingenieurinformatik</h1>
+      <h1 class="site-logo" id="site-title">Vorlesung Datenanalyse mit Python</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
@@ -93,13 +93,8 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../Overview/informatik.html">
-   Informatik
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../Overview/cce.html">
-   Computational Civil Engineering (CCE)
+  <a class="reference internal" href="../../Overview/eup.html">
+   Idee des Kurses ‘Datenanalyse mit Python’
   </a>
  </li>
 </ul>
@@ -594,14 +589,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/FireDynamics/LectureComputerScience"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://EUPhysics.github.io/LectureDataAnalysis/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/FireDynamics/LectureComputerScience/issues/new?title=Issue%20on%20page%20%2Fcontent/Script/03_datenanalyse/0326_bilder.html&body=Your%20issue%20content%20here."><button
+            href="https://EUPhysics.github.io/LectureDataAnalysis//issues/new?title=Issue%20on%20page%20%2Fcontent/Script/03_datenanalyse/0326_bilder.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/FireDynamics/LectureComputerScience/edit/main/book/content/Script/03_datenanalyse/0326_bilder.ipynb"><button
+        <a class="edit-button" href="https://github.com/EUPhysics.github.io/LectureDataAnalysis/edit/main/book/content/Script/03_datenanalyse/0326_bilder.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -643,17 +638,17 @@
 </div>
 </div>
 </div>
-<p>Im weiteren wird ein Bild vom Campus Haspel <a class="reference download internal" download="" href="../../../_downloads/592f1fc843fc7c01bdcad17bf85ec15c/campus_haspel.jpeg"><code class="xref download docutils literal notranslate"><span class="pre">campus_haspel.jpeg</span></code></a> zur Demonstration verwendet. Die Bilddaten können mit der <code class="docutils literal notranslate"><span class="pre">plt.imread</span></code>-Funktion als dreidimensionales Array von 8-bit vorzeichenlosen ganzen Zahlen eingelesen werden.</p>
+<p>Im weiteren wird ein Bild der Bergmann Brauerei <a class="reference download internal" download="" href="../../../_downloads/31fb62adc4b77223e8d8b6c00ee9edc7/bergmann.jpeg"><code class="xref download docutils literal notranslate"><span class="pre">bergmann.jpeg</span></code></a> zur Demonstration verwendet. Die Bilddaten können mit der <code class="docutils literal notranslate"><span class="pre">plt.imread</span></code>-Funktion als dreidimensionales Array von 8-bit vorzeichenlosen ganzen Zahlen eingelesen werden.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;./campus_haspel.jpeg&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;./bergmann.jpeg&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Form:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span> <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Datentyp der Elemente:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Form: (3024, 4032, 3)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Form: (2027, 3040, 3)
 Datentyp der Elemente: uint8
 </pre></div>
 </div>
@@ -667,55 +662,55 @@ Datentyp der Elemente: uint8
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[[ 52  41  45]
-  [ 46  35  39]
-  [ 42  33  34]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[[ 28  49  44]
+  [ 30  49  45]
+  [ 31  47  44]
   ...
-  [ 58  46  32]
-  [ 54  37  19]
-  [ 52  32   8]]
+  [116 138  92]
+  [106 127  88]
+  [108 130  92]]
 
- [[ 46  37  38]
-  [ 43  34  35]
-  [ 43  34  35]
+ [[ 30  46  43]
+  [ 29  46  40]
+  [ 31  46  41]
   ...
-  [ 58  46  34]
-  [ 59  43  27]
-  [ 52  34  14]]
+  [109 133  83]
+  [111 135  87]
+  [115 139  91]]
 
- [[ 37  33  30]
-  [ 38  34  31]
-  [ 40  37  32]
+ [[ 28  43  40]
+  [ 27  42  39]
+  [ 31  43  39]
   ...
-  [ 50  40  28]
-  [ 53  39  26]
-  [ 55  42  26]]
+  [108 131  79]
+  [111 136  81]
+  [109 137  79]]
 
  ...
 
- [[128 105  91]
-  [123 104  89]
-  [121 105  89]
+ [[122 119  76]
+  [127 124  81]
+  [132 129  84]
   ...
-  [  9  14  10]
-  [  5  14   9]
-  [  8  21  14]]
+  [209 207 195]
+  [210 211 197]
+  [209 210 194]]
 
- [[134  94  86]
-  [126  94  83]
-  [113  94  79]
+ [[124 121  80]
+  [127 124  81]
+  [130 127  84]
   ...
-  [ 12  14  11]
-  [  4  13   8]
-  [  4  17   8]]
+  [192 191 186]
+  [195 194 189]
+  [198 197 192]]
 
- [[138  93  88]
-  [133  99  90]
-  [120 101  87]
+ [[126 123  82]
+  [127 124  83]
+  [129 126  83]
   ...
-  [ 12  14  11]
-  [  5  15   7]
-  [  3  16   7]]]
+  [184 184 186]
+  [184 184 186]
+  [188 188 190]]]
 </pre></div>
 </div>
 </div>
@@ -879,7 +874,7 @@ Datentyp der Elemente: uint8
     <div class="container">
       <p>
         
-          By Team Fire | CCE@BUW + IAS-7@FZJ<br/>
+          By EUPhysik<br/>
         
       </p>
     </div>
