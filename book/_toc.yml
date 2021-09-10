@@ -8,8 +8,8 @@ root: content/Overview/uebersicht
 parts:
 - caption: Datenenanalyse mit Python
   chapters:
-  - file: content/Overview/informatik
-  - file: content/Overview/cce
+#  - file: content/Overview/informatik
+  - file: content/Overview/eup
 
 ########################################
 ########################################

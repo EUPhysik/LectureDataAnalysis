@@ -1,9 +1,9 @@
 ###############################################################################
 # Book settings
-title       : Vorlesung Ingenieurinformatik
-author      : Team Fire | CCE@BUW + IAS-7@FZJ
-logo        : 'cce_logo.png'
-description : Dieses Buch ist das Skript zur Vorlesung 'Ingeneursinformatik' an der Bergischen Universität Wuppertal.
+title       : Vorlesung Datenanalyse mit Python
+author      : EUPhysik
+logo        : 'FHDO-Logo-large.svg'
+description : Dieses Buch ist das Skript zur Vorlesung 'Datenanalyse mit Python' an der Fachhochschule Dortmund.
 
 ###############################################################################
 # Exclude settings
@@ -23,9 +23,9 @@ number_toc_chapters: true
 ###############################################################################
 # HTML-specific settings
 html:
-  favicon               : 'cce_logo_standalone_icon.png'
+  favicon               : 'FHDO-Logo-large.svg'
   home_page_in_navbar   : False
-  baseurl               : 'https://firedynamics.github.io/LectureComputerScience/'
+  baseurl               : 'https://EUPhysics.github.io/LectureDataAnalysis/'
   use_edit_page_button  : true
   use_issues_button     : true
   use_repository_button : true
@@ -54,12 +54,10 @@ parse:
 ###############################################################################
 # Launch button settings
 repository:
-  url            : "https://github.com/FireDynamics/LectureComputerScience"
+  url            : "https://EUPhysics.github.io/LectureDataAnalysis/"
   branch         : main
   path_to_book   : "book"
 
-# launch_buttons:
-#   jupyterhub_url : https://io.cce.uni-wuppertal.de/firesim_ss2020/
 
 launch_buttons:
   binderhub_url  : ''
