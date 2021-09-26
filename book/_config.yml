@@ -23,7 +23,7 @@ number_toc_chapters: true
 ###############################################################################
 # HTML-specific settings
 html:
-  favicon               : 'FHDO-Logo-large.svg'
+  favicon               : 'python_icon.png'
   home_page_in_navbar   : False
   baseurl               : 'https://EUPhysics.github.io/LectureDataAnalysis/'
   use_edit_page_button  : true
